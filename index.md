@@ -6,7 +6,7 @@
   <body>
     <h1>AR-Demo3000</h1>
     <button onclick="location.href = 'marker-demo.html';" id="myButton" class="float-left submit-button" >Marker Demo</button>
-    <button onclick="location.href = 'image-tracking-demo.html';" id="myButton" class="float-left submit-button" >Image Demo</button>
+    <button onclick="location.href = 'image-demo.html';" id="myButton" class="float-left submit-button" >Image Demo</button>
     <button onclick="location.href = 'location-demo.html';" id="myButton" class="float-left submit-button" >Location Demo</button>
 
   </body>
