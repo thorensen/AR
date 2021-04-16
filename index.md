@@ -5,6 +5,6 @@
   </head>
   <body>
     <h1>AR-Demo3000</h1>
-    <a href="marker-demo.html">Start Marker Demo</a>
+    <button onclick="location.href = 'marker-demo.html';" id="myButton" class="float-left submit-button" >Start Marker Demo</button>
   </body>
 </html>
