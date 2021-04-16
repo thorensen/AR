@@ -8,6 +8,8 @@
     <button onclick="location.href = 'marker-demo.html';" id="myButton" class="float-left submit-button" >Marker Demo</button>
     <button onclick="location.href = 'image-demo.html';" id="myButton" class="float-left submit-button" >Image Demo</button>
     <button onclick="location.href = 'location-demo.html';" id="myButton" class="float-left submit-button" >Location Demo</button>
+    <button onclick="location.href = 'arjs-gesrures/gestures-demo.html';" id="myButton" class="float-left submit-button" >Gestures Demo</button>
+
 
   </body>
 </html>
