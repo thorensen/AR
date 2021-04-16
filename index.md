@@ -5,6 +5,6 @@
   </head>
   <body>
     <h1>AR-Demo3000</h1>
-    <a href="marker-demo">Start Marker Demo</a>
+    <a href="marker-demo.html">Start Marker Demo</a>
   </body>
 </html>
