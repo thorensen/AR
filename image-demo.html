@@ -1,7 +1,11 @@
 <html>
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js" charset="utf-8"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js" charset="utf-8"></script>
+<script src="js/aframe.min.js"></script>
+<script src="js/aframe-ar.js"></script>
 
+<!-- support 3D text -->
+<script src="js/aframe-text-geometry-component.min.js"></script>
 
 <style media="screen">
   .arjs-loader {
@@ -31,7 +35,7 @@
   </div>
   <a-scene
     vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
+    renderer="logarithmicDepthBuffer: false;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
@@ -50,6 +54,11 @@
         scale="2 2 2"
         position="50 150 0"
       >
+      </a-entity>
+
+      <a-entity text-geometry="value: Hello, world!; font: #exoFont;"
+        material="color: yellow; src: #pixels; repeat: 0.5 0.5;"
+        rotation="-90 0 0">
       </a-entity>
 
     </a-nft>
