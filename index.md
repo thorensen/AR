@@ -9,7 +9,7 @@
     <button onclick="location.href = 'image-demo.html';" id="myButton" class="float-left submit-button" >Image Demo</button>
     <button onclick="location.href = 'location-demo.html';" id="myButton" class="float-left submit-button" >Location Demo</button>
     <button onclick="location.href = 'gestures-demo.html';" id="myButton" class="float-left submit-button" >Gestures Demo</button>
-
+    <button onclick="location.href = 'text.html';" id="myButton" class="float-left submit-button" >Text Demo</button>
 
   </body>
 </html>
