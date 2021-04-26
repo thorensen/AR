@@ -40,8 +40,10 @@
 
     <!-- a-frame scene -->
     <a-scene
-            renderer="antialias: true; logarithmicDepthBuffer: true; colorManagement: true; sortObjects: true;"
-    >
+      vr-mode-ui="enabled: false;"
+      renderer="antialias: true; logarithmicDepthBuffer: true; colorManagement: true; sortObjects: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
@@ -64,7 +66,7 @@
 
           <a-entity
           <!-- positioning a plane directly below text for increased visibility; need to adjust position to avoid z-fighting.  -->
-          <a-plane color="white" rotation="-90 0 0" position="0 -0.25 0" material="transparent: true; opacity: 0.90"></a-plane>
+          <!--<a-plane color="white" rotation="-90 0 0" position="0 -0.25 0" material="transparent: true; opacity: 0.90"></a-plane>
           <!-- for more properties, see https://github.com/aframevr/aframe/blob/master/docs/components/text.md -->
           <a-text value="Hallo Burger!" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" align="center" scale="200 200 200"></a-text>
           >
