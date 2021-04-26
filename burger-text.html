@@ -54,6 +54,19 @@
         <img id="pixels" src="images/pixels.png" />
     	</a-assets>
 
+      <!-- 2D text -->
+      <a-marker type="pattern" url="data/PPHerz.patt">
+
+        <a-entity text-geometry="value: Hello, world!; font: #exoFont;"
+          material="color: yellow; src: #pixels; repeat: 0.5 0.5;"
+          rotation="-90 0 0"
+          align="center"
+          position="0 -0.25 0"
+          scale="2 2 2">
+        </a-entity>
+
+      </a-marker>
+
       <a-nft
         type="nft"
         url="AR/IMG/Held"
