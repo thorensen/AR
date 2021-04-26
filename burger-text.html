@@ -42,13 +42,7 @@
     <a-scene
       vr-mode-ui="enabled: false;"
       renderer="antialias: true; logarithmicDepthBuffer: true; colorManagement: true; sortObjects: true;"
-      embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-      <!-- a-nft is the anchor that defines an Image Tracking entity -->
-      <!-- on 'url' use the path to the Image Descriptors created before. -->
-      <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
-
-
 
       <a-assets>
     		<a-asset-item id="exoFont" src="fonts/exoBlack.typeface.json"></a-asset-item>
@@ -62,15 +56,6 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5">
-          <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-
-          <a-entity
-          <!-- positioning a plane directly below text for increased visibility; need to adjust position to avoid z-fighting.  -->
-          <a-plane color="white" rotation="-90 0 0" position="0 -0.25 0" material="transparent: true; opacity: 0.90"></a-plane>
-          <!-- for more properties, see https://github.com/aframevr/aframe/blob/master/docs/components/text.md -->
-          <a-text value="Hallo Burger!" position="0 -1 0" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" align="center" scale="100 100 100"></a-text>
-
-          </a-entity>
 
           <a-entity text-geometry="value: Hello, world!; font: #exoFont;"
             material="color: yellow; src: #pixels; repeat: 0.5 0.5;"
@@ -80,7 +65,6 @@
           </a-entity>
 
       </a-nft>
-      <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
