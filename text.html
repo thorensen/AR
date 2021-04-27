@@ -27,13 +27,7 @@ arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
 		<!-- positioning a plane directly below text for increased visibility; need to adjust position to avoid z-fighting.  -->
 		<a-plane color="white" rotation="-90 0 0" position="0 -0.5 0" width="3" material="transparent: true; opacity: 0.90"></a-plane>
 		<!-- for more properties, see https://github.com/aframevr/aframe/blob/master/docs/components/text.md -->
-		<a-text value="Hello, world!" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" position="0 -0.6 0" align="center" scale="2 2 2"></a-text>
-
-
-	</a-marker>
-
-	<!-- 2D text -->
-	<a-marker type="pattern" url="data/pattern-herz.patt">
+		<a-text value="Hello, world!" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" position="0 -0.4 0" align="center" scale="2 2 2"></a-text>
 
 		<a-entity text-geometry="value: Hello, world!; font: #exoFont;"
 			material="color: yellow; src: #pixels; repeat: 0.5 0.5;"
