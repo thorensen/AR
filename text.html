@@ -9,7 +9,12 @@
 
 <body style="margin: 0px; overflow: hidden;">
 
-<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
+<a-scene
+vr-mode-ui="enabled: false;"
+renderer="antialias: true; logarithmicDepthBuffer: true; colorManagement: true; sortObjects: true;"
+embedded
+arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+>
 
 	<a-assets>
 		<a-asset-item id="exoFont" src="fonts/exoBlack.typeface.json"></a-asset-item>
@@ -20,20 +25,20 @@
 	<a-marker type="pattern" url="data/pattern-herz.patt">
 
 		<!-- positioning a plane directly below text for increased visibility; need to adjust position to avoid z-fighting.  -->
-		<a-plane color="white" rotation="-90 0 0" position="0 -0.25 0" width="3" material="transparent: true; opacity: 0.90"></a-plane>
+		<a-plane color="white" rotation="-90 0 0" position="0 -0.5 0" width="3" material="transparent: true; opacity: 0.90"></a-plane>
 		<!-- for more properties, see https://github.com/aframevr/aframe/blob/master/docs/components/text.md -->
-		<a-text value="Hello, world!" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" align="center" scale="2 2 2"></a-text>
+		<a-text value="Hello, world!" font="fonts/Exo2Bold.fnt" color="red" rotation="-90 0 0" position="0 -0.6 0" align="center" scale="2 2 2"></a-text>
 
 
 	</a-marker>
 
 	<!-- 2D text -->
-	<a-marker type="pattern" url="data/hiro.patt">
+	<a-marker type="pattern" url="data/pattern-herz.patt">
 
 		<a-entity text-geometry="value: Hello, world!; font: #exoFont;"
 			material="color: yellow; src: #pixels; repeat: 0.5 0.5;"
 			rotation="-90 0 0"
-			position="0 -0.25 0"
+			position="0 -0.5 0"
 			scale="2 2 2">
 		</a-entity>
 
