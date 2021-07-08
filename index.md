@@ -11,6 +11,7 @@
     <button onclick="location.href = 'gestures-demo.html';" id="myButton" class="float-left submit-button" >Gestures Demo</button>
     <button onclick="location.href = 'text.html';" id="myButton" class="float-left submit-button" >Text Demo</button>
     <button onclick="location.href = 'burger-text.html';" id="myButton" class="float-left submit-button" >Burger Demo</button>
+    <button onclick="location.href = '/webxr-samples-main/hit-test.html';" id="myButton" class="float-left submit-button" >Hit Test</button>
 
   </body>
 </html>
